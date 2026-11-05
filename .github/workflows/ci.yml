@@ -6,7 +6,7 @@ on:
 
 jobs:
      test:
-         runs-on: ubuntu
+         runs-on: ubuntu-latest
          steps:
            - name : checout code
              uses: actions/checkout@v5
