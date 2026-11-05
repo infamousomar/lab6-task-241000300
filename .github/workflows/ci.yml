@@ -1,0 +1,16 @@
+name: calc ci
+
+on:
+  push:
+       branches: [main]
+
+jobs:
+     test:
+         rubs-0n: ubuntu
+         steps:
+              - name : checout code
+               uses: actions/checkout@v5
+              - name: set up python
+                uses: actions/setup-python@v4
+              - name: run tests
+                run : python -m pytest -v
